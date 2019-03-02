@@ -33,6 +33,8 @@ let square x = x *. x ;;
 "Hello World";;
 (* type string *)
 
+(*unit types*)
+
 (* ----- Data Structures Series ----- *)
 (* ----- Youtube Link: https://tinyurl.com/yyhothy8 ----- *)
 
