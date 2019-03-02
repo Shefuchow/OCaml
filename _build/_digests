@@ -1,0 +1,5 @@
+"Rule: ocaml: cmx* & o* -> native (%=my_proj )": "\163FR\254O*\203\199\1958\234\155\152\185\1762"
+"Rule: ocaml: ml -> cmo & cmi (%=my_proj )": "w\172\n\190\133\025\193\029S\186\192\006\192./\207"
+"Rule: ocaml: ml & cmi -> cmx & o (%=my_proj )": "'\242fq\029\193t\030\181\030-4G\t\133{"
+"Rule: ocaml dependencies ml (%=my_proj )": "\175M\245\229DP\239\240\031?\\&\228\1656v"
+"Resource: /Users/Mastershefu/Documents/GitHub/OCaml/my_proj.ml": "\020\231d\130\231\000$\240\171\002\214\128\191\182s`"
