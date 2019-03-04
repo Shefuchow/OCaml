@@ -108,3 +108,34 @@ let range a b =
       a :: aux (a+1) b
     in
     aux a b
+
+let add_5 n = n + 5;;
+let sub_5 n = n - 5;;
+let mul_5 n = n * 5;;
+let div_5 n = n / 5;;
+
+let apply_function f d = f d ;;
+
+let listOfFunctions = [add_5; sub_5; mul_5; div_5]
+
+let rec apply_Function listOfFunctions num result =
+  match listOfFunctions with
+  | [] -> result
+  | h::t -> apply_Function t num (result@([h num]))
+;;
+
+(*List Modules*)
+let list10 = [1;2;3;4;5;6;7;8;9;10];;
+List.length list10;; (*length*)
+List.nth list10 4;; (*nth element*)
+List.rev list10;; (*reverses whole list*)
+let list11 = [11;12;13;14;15;16;17;18;19;20];;
+List.append list10 list11;; (*combines list by adding second list to the end of first list*)
+list10@list11;;
+let listofLists = [list10;list11;[21;22;23]];;
+List.concat listofLists;; (*flattens the list of lists into one*)
+List.flatten listofLists;; (*Does same thing as above*)
+List.exists (fun i -> i > 5) list10;; (*is there at least 1 element > 5*)
+List.exists2 (fun i j -> i > j);;(*compares corresponding elements to be equal, if both lists are equal*)
+List.mem 3 list10;;
+List.for_all2 (fun x y -> x=y);; (*every element has to follow our defined preicate*)
